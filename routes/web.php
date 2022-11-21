@@ -3,6 +3,7 @@
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\FieldController;
 use App\Http\Controllers\GraphController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ServiceController;
@@ -23,13 +24,33 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', [HomeController::class, 'index']);
+
+Route::get('/certificaciones', [HomeController::class, 'certificaciones'])->name('certificaciones');
+
+Route::get('/telecomunicaciones', [HomeController::class, 'telecomunicaciones'])->name('telecomunicaciones');
+
+Route::get('/redes_electricas', [HomeController::class, 'redesElectricas'])->name('redes_electricas');
+
+Route::get('/circuito_cerrado', [HomeController::class, 'circuitosCerrados'])->name('circuito_cerrado');
+
+Route::get('/corriente_regulada', [HomeController::class, 'corrienteRegulada'])->name('corriente_regulada');
+
+Route::get('/data_centers', [HomeController::class, 'dataCenters'])->name('data_centers');
+
+Route::get('/fibra_optica', [HomeController::class, 'fibraOptica'])->name('fibra_optica');
+
+Route::get('/cables_estructurados', [HomeController::class, 'cablesEstructurados'])->name('cables_estructurados');
+
+Route::get('/polizas', [HomeController::class, 'polizas'])->name('polizas');
+
+Route::get('/outsourcing', [HomeController::class, 'outsourcing'])->name('outsourcing');
+
+Route::get('/administracion', [HomeController::class, 'administracion'])->name('administracion');
 
 Route::post('/usuario_sesion', [UserController::class, 'login'])->name('usuario_sesion');
 
-Route::get('/inicia_sesion', [UserController::class, 'index']);
+Route::get('/inicia_sesion', [UserController::class, 'index'])->name('login');
 
 Route::get('/panel_admin', [UserController::class, 'panelAdmin'])->name('panel_admin');
 

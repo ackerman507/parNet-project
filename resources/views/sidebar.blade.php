@@ -56,17 +56,17 @@
 
                         <li class="areas mt-3">
                             <div class="areas2 text-center w-100">Areas ParNet</div>
-                            <a href="#" class="btn btn-area mt-3">Certificaciones</a>
-                            <a href="#" class="btn btn-area">Telecomunicaciones</a>
-                            <a href="#" class="btn btn-area">Redes Eléctricas</a>
-                            <a href="#" class="btn btn-area">Circuito Cerrado TV</a>
-                            <a href="#" class="btn btn-area">Corriente Regulada</a>
-                            <a href="#" class="btn btn-area">Data Centers</a>
-                            <a href="#" class="btn btn-area">Fibra Óptica</a>
-                            <a href="#" class="btn btn-area">Cables Estructurados</a>
-                            <a href="#" class="btn btn-area">Pólizas</a>
-                            <a href="#" class="btn btn-area">Outsourcing</a>
-                            <a href="#" class="btn btn-area">Administración</a>
+                            <a href="{{ route('certificaciones') }}" class="btn btn-area mt-3">Certificaciones</a>
+                            <a href="{{ route('telecomunicaciones') }}" class="btn btn-area">Telecomunicaciones</a>
+                            <a href="{{ route('redes_electricas') }}" class="btn btn-area">Redes Eléctricas</a>
+                            <a href="{{ route('circuito_cerrado') }}" class="btn btn-area">Circuito Cerrado TV</a>
+                            <a href="{{ route('corriente_regulada') }}" class="btn btn-area">Corriente Regulada</a>
+                            <a href="{{ route('data_centers') }}" class="btn btn-area">Data Centers</a>
+                            <a href="{{ route('fibra_optica') }}" class="btn btn-area">Fibra Óptica</a>
+                            <a href="{{ route('cables_estructurados') }}" class="btn btn-area">Cables Estructurados</a>
+                            <a href="{{ route('polizas') }}" class="btn btn-area">Pólizas</a>
+                            <a href="{{ route('outsourcing') }}" class="btn btn-area">Outsourcing</a>
+                            <a href="{{ route('login') }}" class="btn btn-area">Administración</a>
                         </li>
 
                         <li class="mt-3">
@@ -170,37 +170,45 @@
 
                         <img src="{{ asset('assets/PARNET_LOGO3_blanco.png') }}" alt="logo"
                             class="d-none d-md-inline me-4" width="98px">
-                        <a class="btn btn-sm ms-md-5 p-control border-end d-none d-md-inline " href="#!" role="button">Página
+                        <a class="btn btn-sm ms-md-5 p-control border-end d-none d-md-inline " href="#!"
+                            role="button">Página
                             principal</a>
                         <a class="btn btn-sm ms-md-5 d-inline d-md-none btn-link btn-floating" href="#!"
                             role="button"><i class="fas fa-home"></i></a>
-                        <a class="btn btn-sm  p-control border-end d-none d-md-inline" href="#!" role="button">¿Quiénes
+                        <a class="btn btn-sm  p-control border-end d-none d-md-inline" href="#!"
+                            role="button">¿Quiénes
                             somos?</a>
                         <a class="btn btn-sm ms-md-5 d-inline d-md-none btn-link btn-floating" href="#!"
                             role="button"><i class="fas fa-user-tie"></i></a>
-                        <a class="btn btn-sm  p-control border-end d-none d-md-inline" href="#!" role="button">Clientes</a>
+                        <a class="btn btn-sm  p-control border-end d-none d-md-inline" href="#!"
+                            role="button">Clientes</a>
                         <a class="btn btn-sm ms-md-5 d-inline d-md-none btn-link btn-floating" href="#!"
                             role="button"><i class="fas fa-people-arrows"></i></a>
-                        <a class="btn btn-sm  p-control border-end d-none d-md-inline" href="#!" role="button">Servicios</a>
+                        <a class="btn btn-sm  p-control border-end d-none d-md-inline" href="#!"
+                            role="button">Servicios</a>
                         <a class="btn btn-sm ms-md-5 d-inline d-md-none btn-link btn-floating" href="#!"
                             role="button"><i class="fas fa-people-carry"></i></a>
-                        <a class="btn btn-sm  p-control border-end d-none d-md-inline" href="#!" role="button">Productos</a>
+                        <a class="btn btn-sm  p-control border-end d-none d-md-inline" href="#!"
+                            role="button">Productos</a>
                         <a class="btn btn-sm ms-md-5 d-inline d-md-none btn-link btn-floating" href="#!"
                             role="button"><i class="fas fa-server"></i></a>
-                        <a class="btn btn-sm  p-control border-end d-none d-md-inline" href="#!" role="button">Casos de
+                        <a class="btn btn-sm  p-control border-end d-none d-md-inline" href="#!"
+                            role="button">Casos de
                             Éxito</a>
                         <a class="btn btn-sm ms-md-5 d-inline d-md-none btn-link btn-floating" href="#!"
                             role="button"><i class="fas fa-check-circle"></i></a>
-                        <a class="btn btn-sm  p-control border-end d-none d-md-inline" href="#!" role="button">Contacto</a>
+                        <a class="btn btn-sm  p-control border-end d-none d-md-inline" href="#!"
+                            role="button">Contacto</a>
                         <a class="btn btn-sm ms-md-5 d-inline d-md-none btn-link btn-floating" href="#!"
                             role="button"><i class="far fa-envelope"></i></a>
-                        <a class="btn btn-sm  p-control border-end d-none d-md-inline" href="#!" role="button">Soporte</a>
+                        <a class="btn btn-sm  p-control border-end d-none d-md-inline" href="#!"
+                            role="button">Soporte</a>
                         <a class="btn btn-sm ms-md-5 d-inline d-md-none btn-link btn-floating" href="#!"
                             role="button"><i class="fas fa-headset"></i></a>
 
                         <img src="{{ asset('assets/Vista (158).png') }}" alt="logo" class="d-none d-md-inline"
                             width="60px">
-                            {{-- <img src="{{ asset('assets/linea.png') }}" alt="linea" class="d-none d-md-inline"
+                        {{-- <img src="{{ asset('assets/linea.png') }}" alt="linea" class="d-none d-md-inline"
                             > --}}
                     </section>
                 </div>
