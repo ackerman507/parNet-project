@@ -28,6 +28,10 @@ Route::get('/', [HomeController::class, 'index']);
 
 Route::get('/productos_publico', [HomeController::class, 'productos'])->name('productos');
 
+Route::get('/servicios_publico', [HomeController::class, 'servicios'])->name('servicios');
+
+Route::get('/contactanos', [HomeController::class, 'contactanos'])->name('contactanos');
+
 Route::get('/certificaciones', [HomeController::class, 'certificaciones'])->name('certificaciones');
 
 Route::get('/telecomunicaciones', [HomeController::class, 'telecomunicaciones'])->name('telecomunicaciones');

@@ -37,13 +37,19 @@ class ContactController extends Controller
      */
     public function store(Request $request)
     {
-        $contact = Contact::create($request->all());
-        // Enviar correo
-        Mail::to($request['mail'])->send(new ParNetMail($contact));
-        if (Mail::failures())
-            return response('Lo sentimos, vuelva a intentarlo en un momento');
-
-        return response()->json($contact);
+        $rules = ['captcha' => 'required|captcha'];
+        $validator = validator()->make(request()->all(), $rules);
+        if ($validator->fails()) {
+            return response()->json('CAPTCHA incorrecto', 429);
+        } else {
+            $contact = Contact::create($request->except('captcha'));
+            // Enviar correo
+            Mail::to($request['mail'])->send(new ParNetMail($contact));
+            if (Mail::failures())
+                return response('Lo sentimos, vuelva a intentarlo en un momento');
+    
+            return response()->json($contact);
+        }
     }
 
     /**

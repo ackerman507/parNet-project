@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Field;
 use App\Models\Product;
 use Illuminate\Http\Request;
 
@@ -55,6 +56,15 @@ class HomeController extends Controller
     public function productos() {
         $productos = Product::all();
         return view('navbar.productos', compact('productos'));
+    }
+
+    public function contactanos() {
+        return view('navbar.contactanos');
+    }
+
+    public function servicios() {
+        $fields = Field::all();
+        return view('navbar.servicios', compact('fields'));
     }
 
 }

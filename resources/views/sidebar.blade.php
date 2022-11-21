@@ -133,17 +133,18 @@
                                         <a class="nav-link menu-tabs me-2" href="#">Clientes</a>
                                     </li>
                                     <li class="nav-item ">
-                                        <a class="nav-link menu-tabs me-2" href="#">Servicios</a>
+                                        <a class="nav-link menu-tabs me-2" href="{{ route('servicios') }}">Servicios</a>
                                     </li>
                                     <li class="nav-item ">
-                                        <a class="nav-link menu-tabs me-2" href="{{ route('productos')}}">Productos</a>
+                                        <a class="nav-link menu-tabs me-2" href="{{ route('productos') }}">Productos</a>
                                     </li>
                                     <li class="nav-item ">
                                         <a class="nav-link menu-tabs me-2" href="#">Casos de
                                             Éxito</a>
                                     </li>
                                     <li class="nav-item ">
-                                        <a class="nav-link menu-tabs me-2" href="#">Contactos</a>
+                                        <a class="nav-link menu-tabs me-2"
+                                            href="{{ route('contactanos') }}">Contactos</a>
                                     </li>
                                     <li class="nav-item ">
                                         <a class="nav-link menu-tabs me-2" href="#">Socios</a>
