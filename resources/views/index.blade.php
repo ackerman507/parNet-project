@@ -1,5 +1,5 @@
-@extends('base')
+@extends('sidebar')
 @section('title', 'Prueba')
-@section('body')
+@section('content')
     <h1>Prueba vista</h1>
 @endsection

@@ -76,5 +76,12 @@ Route::get('/graficas', [GraphController::class, 'index'])->name('graphs');
 Route::get('/solicitudes_servicios_listar', [ServiceRequestController::class, 'getServicesRequests'])->name('services_requests.get');
 
 Route::resource('/solicitudes_servicios', ServiceRequestController::class);
+Route::get('/contacto', function () {
+    return view('contacto.index');
+});
+
+Route::get('/inicio', function () {
+    return view('inicio.index');
+});
 
 Route::get('/home', [UserController::class, 'login'])->name('home');
