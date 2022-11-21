@@ -18,13 +18,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
 Route::get('/contacto', function () {
     return view('contacto.index');
 });
 
-
-
-Auth::routes();
+Route::get('/inicio', function () {
+    return view('inicio.index');
+});
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
