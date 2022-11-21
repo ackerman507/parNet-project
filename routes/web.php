@@ -26,6 +26,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'index']);
 
+Route::get('/productos_publico', [HomeController::class, 'productos'])->name('productos');
+
 Route::get('/certificaciones', [HomeController::class, 'certificaciones'])->name('certificaciones');
 
 Route::get('/telecomunicaciones', [HomeController::class, 'telecomunicaciones'])->name('telecomunicaciones');
@@ -47,6 +49,7 @@ Route::get('/polizas', [HomeController::class, 'polizas'])->name('polizas');
 Route::get('/outsourcing', [HomeController::class, 'outsourcing'])->name('outsourcing');
 
 Route::get('/administracion', [HomeController::class, 'administracion'])->name('administracion');
+
 
 Route::post('/usuario_sesion', [UserController::class, 'login'])->name('usuario_sesion');
 

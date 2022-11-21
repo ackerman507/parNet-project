@@ -85,7 +85,8 @@
                         </li>
 
                         <li class="px-3 mt-3 bg-blue">
-                            <img src="{{ asset('assets/img_conect.png') }}" alt="conectados"><span class="mensaje ms-2 me-2"
+                            <img src="{{ asset('assets/img_conect.png') }}" alt="conectados"><span
+                                class="mensaje ms-2 me-2"
                                 style="font-size: 10px; font-style:italic; color:#9999cc;">Conectados:</span>
 
                         </li>
@@ -135,7 +136,7 @@
                                         <a class="nav-link menu-tabs me-2" href="#">Servicios</a>
                                     </li>
                                     <li class="nav-item ">
-                                        <a class="nav-link menu-tabs me-2" href="#">Productos</a>
+                                        <a class="nav-link menu-tabs me-2" href="{{ route('productos')}}">Productos</a>
                                     </li>
                                     <li class="nav-item ">
                                         <a class="nav-link menu-tabs me-2" href="#">Casos de
