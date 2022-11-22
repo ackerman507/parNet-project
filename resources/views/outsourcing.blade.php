@@ -7,7 +7,7 @@
     </div>
 
     <div class="row m-3 text-center">
-        <h1>En contrucción</h1>
+        <h1>En construcción</h1>
         <i class="fa-solid fa-person-digging fa-10x"></i>
 
     </div>
