@@ -17,8 +17,7 @@ class ServiceRequestController extends Controller
      */
     public function index()
     {
-        $news = News::all();
-        return view('solicitudesServicio.index', compact('news'));
+        return view('solicitudesServicio.index');
     }
 
     /**

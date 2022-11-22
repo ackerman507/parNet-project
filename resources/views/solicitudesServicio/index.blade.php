@@ -1,4 +1,4 @@
-@extends('sidebar')
+@extends('sidebar-admin')
 @section('title', 'Solicitudes de servicio por área')
 @section('content')
     <div class="row mb-3">
