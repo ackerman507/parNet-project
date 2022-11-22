@@ -133,7 +133,7 @@
                                             somos?</a>
                                     </li>
                                     <li class="nav-item ">
-                                        <a class="nav-link menu-tabs me-2" href="#">Clientes</a>
+                                        <a class="nav-link menu-tabs me-2" href="{{ route('clientes') }}">Clientes</a>
                                     </li>
                                     <li class="nav-item ">
                                         <a class="nav-link menu-tabs me-2" href="{{ route('servicios') }}">Servicios</a>
@@ -185,9 +185,9 @@
                             somos?</a>
                         <a class="btn btn-sm ms-md-5 d-inline d-md-none btn-link btn-floating" href="#!"
                             role="button"><i class="fas fa-user-tie"></i></a>
-                        <a class="btn btn-sm  p-control border-end d-none d-md-inline" href="#!"
+                        <a class="btn btn-sm  p-control border-end d-none d-md-inline" href="{{ route('clientes') }}"
                             role="button">Clientes</a>
-                        <a class="btn btn-sm ms-md-5 d-inline d-md-none btn-link btn-floating" href="#!"
+                        <a class="btn btn-sm ms-md-5 d-inline d-md-none btn-link btn-floating" href="{{ route('clientes') }}"
                             role="button"><i class="fas fa-people-arrows"></i></a>
                         <a class="btn btn-sm  p-control border-end d-none d-md-inline" href="#!"
                             role="button">Servicios</a>

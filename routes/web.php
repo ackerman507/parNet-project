@@ -28,6 +28,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'index'])->name('pagina-principal');
 
 
+Route::get('/clientes', [HomeController::class, 'clientes'])->name('clientes');
+
+//LISTO
 Route::get('/productos_publico', [HomeController::class, 'productos'])->name('productos');
 
 //listo
@@ -39,6 +42,7 @@ Route::get('/servicios_publico', [HomeController::class, 'servicios'])->name('se
 
 //listo
 Route::get('/contactanos', [HomeController::class, 'contactanos'])->name('contactanos');
+
 //listo
 Route::get('/certificaciones', [HomeController::class, 'certificaciones'])->name('certificaciones');
 

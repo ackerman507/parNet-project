@@ -1,15 +1,15 @@
 @extends('sidebar')
-@section('title', 'Cables estructurados')
+@section('title', 'Productos')
 @section('content')
-    <div class="row mb-3">
+    <div class="row text-white mb-3">
         <div class="col-5 col-md-3 titulos">
             <p style="titulos" class="ms-3">Productos</p>
         </div>
     </div>
 
-    <div class="row">
+    <div class="row text-white">
         <div class="col-12">
-            <table id="products" class="table w-100">
+            <table id="products" class="table w-100 table-striped table-success">
                 <thead>
                     <th>Nombre</th>
                     <th>Descripción</th>
