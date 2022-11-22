@@ -38,8 +38,14 @@ class ServiceRequestController extends Controller
      */
     public function store(Request $request)
     {
-        $serviceRequest = ServiceRequest::create($request->all());
-        return response()->json($serviceRequest);
+        $rules = ['captcha' => 'required|captcha'];
+        $validator = validator()->make(request()->all(), $rules);
+        if ($validator->fails()) {
+            return response()->json('CAPTCHA incorrecto', 429);
+        } else {
+            $serviceRequest = ServiceRequest::create($request->except('captcha'));
+            return response()->json($serviceRequest);
+        }
     }
 
     /**
@@ -87,7 +93,8 @@ class ServiceRequestController extends Controller
         ServiceRequest::find($serviceRequest)->delete();
     }
 
-    public function getServicesRequests() {
+    public function getServicesRequests()
+    {
         $servicesRequests = ServiceRequest::with('field')->get();
         return DataTables::of($servicesRequests)->make(true);
     }

@@ -13,7 +13,7 @@
     <h1>{{ $details->company }}</h1>
     <p>Hola, me pongo en contacto somos la empresa {{ $details->company }}, mi nombre es {{ $details->name }} con el
         sigguiente asunto {{ $details->message }}.</p>
-    <small>{{$details->phone}}</small>
+    <small>{{$details->phone}} | </small>
     <small>{{$details->mail}}</small>
 
 

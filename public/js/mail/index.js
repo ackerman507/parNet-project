@@ -1,4 +1,5 @@
 const sendMail = async () => {
+    Swal.showLoading();
     const url = route('contacto.store');
     const form = document.getElementById('formulario');
     const formData = new FormData(form);
@@ -17,6 +18,7 @@ const sendMail = async () => {
             text: 'Se ha enviado con exito el correo',
             title: 'Exito'
         });
+        form.reset();
         return;
     }
 
