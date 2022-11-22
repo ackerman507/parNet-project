@@ -92,4 +92,9 @@ class HomeController extends Controller
         return view('clientes', compact('news'));
     }
 
+    public function quienes_somos() {
+        $news = News::all();
+        return view('quienes_somos', compact('news'));
+    }
+
 }

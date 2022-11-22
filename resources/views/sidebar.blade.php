@@ -129,7 +129,7 @@
                                             principal</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link menu-tabs me-2" href="#">¿Quiénes
+                                        <a class="nav-link menu-tabs me-2" href="{{ route('quienes_somos') }}">¿Quiénes
                                             somos?</a>
                                     </li>
                                     <li class="nav-item ">
@@ -180,22 +180,22 @@
                             principal</a>
                         <a class="btn btn-sm ms-md-5 d-inline d-md-none btn-link btn-floating" href="{{ route('pagina-principal') }}"
                             role="button"><i class="fas fa-home"></i></a>
-                        <a class="btn btn-sm  p-control border-end d-none d-md-inline" href="#!"
+                        <a class="btn btn-sm  p-control border-end d-none d-md-inline" href="{{ route('quienes_somos') }}"
                             role="button">¿Quiénes
                             somos?</a>
-                        <a class="btn btn-sm ms-md-5 d-inline d-md-none btn-link btn-floating" href="#!"
+                        <a class="btn btn-sm ms-md-5 d-inline d-md-none btn-link btn-floating" href="{{ route('quienes_somos') }}"
                             role="button"><i class="fas fa-user-tie"></i></a>
                         <a class="btn btn-sm  p-control border-end d-none d-md-inline" href="{{ route('clientes') }}"
                             role="button">Clientes</a>
                         <a class="btn btn-sm ms-md-5 d-inline d-md-none btn-link btn-floating" href="{{ route('clientes') }}"
                             role="button"><i class="fas fa-people-arrows"></i></a>
-                        <a class="btn btn-sm  p-control border-end d-none d-md-inline" href="#!"
+                        <a class="btn btn-sm  p-control border-end d-none d-md-inline" href="{{ route('servicios') }}"
                             role="button">Servicios</a>
-                        <a class="btn btn-sm ms-md-5 d-inline d-md-none btn-link btn-floating" href="#!"
+                        <a class="btn btn-sm ms-md-5 d-inline d-md-none btn-link btn-floating" href="{{ route('servicios') }}"
                             role="button"><i class="fas fa-people-carry"></i></a>
-                        <a class="btn btn-sm  p-control border-end d-none d-md-inline" href="#!"
+                        <a class="btn btn-sm  p-control border-end d-none d-md-inline" href="{{ route('productos') }}"
                             role="button">Productos</a>
-                        <a class="btn btn-sm ms-md-5 d-inline d-md-none btn-link btn-floating" href="#!"
+                        <a class="btn btn-sm ms-md-5 d-inline d-md-none btn-link btn-floating" href="{{ route('productos') }}"
                             role="button"><i class="fas fa-server"></i></a>
                         <a class="btn btn-sm  p-control border-end d-none d-md-inline" href="#!"
                             role="button">Casos de

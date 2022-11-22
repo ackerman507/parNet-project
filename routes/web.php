@@ -27,8 +27,12 @@ use Illuminate\Support\Facades\Route;
 //lista
 Route::get('/', [HomeController::class, 'index'])->name('pagina-principal');
 
-
+//listo
 Route::get('/clientes', [HomeController::class, 'clientes'])->name('clientes');
+
+//listo
+
+Route::get('/quienes_somos', [HomeController::class, 'quienes_somos'])->name('quienes_somos');
 
 //LISTO
 Route::get('/productos_publico', [HomeController::class, 'productos'])->name('productos');
