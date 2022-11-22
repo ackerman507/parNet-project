@@ -1,5 +1,10 @@
 @extends('sidebar')
 @section('title', 'Certificaciones')
 @section('content')
-    <h1>Telecomunicaciones</h1>
+<div class="row">
+    <div class="col-5 col-md-3 titulos">
+        <p style="titulos" class="ms-3">Telecomunicaciones</p>
+    </div>
+    
+</div>
 @endsection

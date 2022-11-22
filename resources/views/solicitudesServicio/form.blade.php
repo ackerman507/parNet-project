@@ -1,5 +1,5 @@
 <form action="" id="serviceRequest">
-    <div class="row">
+    <div class="row text-white">
         <div class="col-12">
             <label for="">Área</label>
             <select name="field_id" id="" class="form-control">
@@ -14,15 +14,15 @@
             </select>
         </div>
     </div>
-    <div class="row">
+    <div class="row text-white">
         <div class="col-12">
             <label for="">Email</label>
-            <input type="text" name="mail" class="form-control">
+            <input type="email" name="mail" class="form-control">
         </div>
     </div>
-    <div class="row">
+    <div class="row text-white">
         <div class="col-12">
-            <label for="">Sugerencia de servicio al área</label>
+            <label for="">Descripción</label>
             <textarea name="description" class="form-control" id="" cols="30" rows="10"></textarea>
         </div>
     </div>

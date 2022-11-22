@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\Models\News;
 
 class UserController extends Controller
 {
@@ -25,7 +26,8 @@ class UserController extends Controller
     }
 
     public function panelAdmin() {
-        return view('admin.panelAdmin');
+        $news = News::all();
+        return view('admin.panelAdmin', compact('news'));
     }
 
     /**

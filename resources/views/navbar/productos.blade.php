@@ -1,9 +1,9 @@
 @extends('sidebar')
 @section('title', 'Cables estructurados')
 @section('content')
-    <div class="row">
-        <div class="col-12">
-            <h1>Productos</h1>
+    <div class="row mb-3">
+        <div class="col-5 col-md-3 titulos">
+            <p style="titulos" class="ms-3">Productos</p>
         </div>
     </div>
 

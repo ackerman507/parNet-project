@@ -24,17 +24,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//lista
 Route::get('/', [HomeController::class, 'index'])->name('pagina-principal');
+
 
 Route::get('/productos_publico', [HomeController::class, 'productos'])->name('productos');
 
-
+//listo
 Route::get('/noticias_publico', [HomeController::class, 'noticias'])->name('noticias');
 
+
+//listo
 Route::get('/servicios_publico', [HomeController::class, 'servicios'])->name('servicios');
 
+//listo
 Route::get('/contactanos', [HomeController::class, 'contactanos'])->name('contactanos');
-
+//listo
 Route::get('/certificaciones', [HomeController::class, 'certificaciones'])->name('certificaciones');
 
 Route::get('/telecomunicaciones', [HomeController::class, 'telecomunicaciones'])->name('telecomunicaciones');
@@ -63,12 +68,14 @@ Route::post('/usuario_sesion', [UserController::class, 'login'])->name('usuario_
 // vista lista
 Route::get('/inicia_sesion', [UserController::class, 'index'])->name('login'); 
 
+//lista
 Route::get('/panel_admin', [UserController::class, 'panelAdmin'])->name('panel_admin');
 
+//no necesita vista
 Route::get('/noticias_listar', [NewsController::class, 'getNews'])->name('news.get');
-
+//no necesita vista
 Route::get('/productos_listar', [ProductController::class, 'getProducts'])->name('products.get');
-
+//no necesita vista
 Route::get('/noticias_estatus/{id}', [NewsController::class, 'changeStatus'])->name('status');
 
 Route::resource('/noticias', NewsController::class);

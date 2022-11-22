@@ -202,9 +202,9 @@
                             Éxito</a>
                         <a class="btn btn-sm ms-md-5 d-inline d-md-none btn-link btn-floating" href="#!"
                             role="button"><i class="fas fa-check-circle"></i></a>
-                        <a class="btn btn-sm  p-control border-end d-none d-md-inline" href="#!"
+                        <a class="btn btn-sm  p-control border-end d-none d-md-inline" href="{{ route('contactanos') }}"
                             role="button">Contacto</a>
-                        <a class="btn btn-sm ms-md-5 d-inline d-md-none btn-link btn-floating" href="#!"
+                        <a class="btn btn-sm ms-md-5 d-inline d-md-none btn-link btn-floating" href="{{ route('contactanos') }}"
                             role="button"><i class="far fa-envelope"></i></a>
                         <a class="btn btn-sm  p-control border-end d-none d-md-inline" href="#!"
                             role="button">Soporte</a>
