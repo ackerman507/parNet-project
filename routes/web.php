@@ -24,9 +24,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [HomeController::class, 'index']);
+Route::get('/', [HomeController::class, 'index'])->name('pagina-principal');
 
 Route::get('/productos_publico', [HomeController::class, 'productos'])->name('productos');
+
 
 Route::get('/noticias_publico', [HomeController::class, 'noticias'])->name('noticias');
 

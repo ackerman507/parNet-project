@@ -16,57 +16,70 @@ class HomeController extends Controller
     }
 
     public function certificaciones() {
-        return view('certificaciones');
+        $news = News::all();
+        return view('certificaciones', compact('news'));
     }
 
     public function telecomunicaciones() {
-        return view('telecomunicaciones');
+        $news = News::all();
+        return view('telecomunicaciones', compact('news'));
     }
 
     public function redesElectricas() {
-        return view('redesElectricas');
+        $news = News::all();
+        return view('redesElectricas', compact('news'));
     }
 
     public function circuitosCerrados() {
-        return view('circuitosCerrados');
+        $news = News::all();
+        return view('circuitosCerrados', compact('news'));
     }
 
     public function corrienteRegulada() {
-        return view('corrienteRegulada');
+        $news = News::all();
+        return view('corrienteRegulada', compact('news'));
     }
 
     public function dataCenters() {
-        return view('dataCenters');
+        $news = News::all();
+        return view('dataCenters', compact('news'));
     }
 
     public function fibraOptica() {
-        return view('fibraOptica');
+        $news = News::all();
+        return view('fibraOptica', compact('news'));
     }
 
     public function cablesEstructurados() {
-        return view('cablesEstructurados');
+        $news = News::all();
+        return view('cablesEstructurados', compact('news'));
     }
 
     public function polizas() {
-        return view('polizas');
+        $news = News::all();
+        return view('polizas', compact('news'));
     }
 
     public function outsourcing() {
-        return view('outsourcing');
+        $news = News::all();
+        return view('outsourcing', compact('news'));
     }
 
     public function productos() {
         $productos = Product::all();
-        return view('navbar.productos', compact('productos'));
+        $news = News::all();
+        return view('navbar.productos', compact('productos', 'news'));
     }
 
     public function contactanos() {
-        return view('navbar.contactanos');
+        $news = News::all();
+        return view('navbar.contactanos', compact('news'));
     }
 
     public function servicios() {
         $fields = Field::all();
-        return view('navbar.servicios', compact('fields'));
+        $news = News::all();
+        return view('navbar.servicios', compact('fields', 'news'));
     }
 
     public function noticias() {

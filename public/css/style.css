@@ -22,6 +22,16 @@ body {
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
+.titulos {
+    border-radius: 0 15px 15px 0;
+    background-image: linear-gradient(0deg, #6599cb 0%, #336599 100%);
+    text-decoration: none !important;
+    font-size: 16px !important;
+    color: #000;
+    font-family: "Verdana";
+    /* padding: 0 !important; */
+}
+
 .mensaje {
     font-size: 14px;
     color: #ffffff;
@@ -200,6 +210,8 @@ a:focus {
     display: flex;
     width: 100%;
     align-items: stretch;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
 }
 
 #sidebar {
@@ -382,6 +394,9 @@ a.article:hover {
     /* padding: 40px; */
     background-color: #336699;
     height: 100%;
+    padding-left: 10px;
+    padding-right: calc(var(--bs-gutter-x) * .5) !important;
+    padding-left: calc(var(--bs-gutter-x) * .5) !important;
 }
 
 #content {
@@ -397,10 +412,14 @@ a.article:hover {
     left: 126px;
 }
 
-.row>* {
+#lista-principal ul {
+    list-style-image: url("../assets/ico_archive2.png");
+}
+
+/* .row>* {
     padding-right: 0 !important;
     padding-left: 0 !important;
-}
+} */
 
 /* #content {
     width: calc(100% - 452px); */

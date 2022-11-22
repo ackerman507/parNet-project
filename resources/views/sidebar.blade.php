@@ -125,7 +125,7 @@
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="nav navbar-nav ml-auto">
                                     <li class="nav-item">
-                                        <a class="nav-link menu-tabs me-2" aria-current="page" href="#">Página
+                                        <a class="nav-link menu-tabs me-2" aria-current="page" href="{{ route('pagina-principal') }}">Página
                                             principal</a>
                                     </li>
                                     <li class="nav-item">
@@ -175,10 +175,10 @@
 
                         <img src="{{ asset('assets/PARNET_LOGO3_blanco.png') }}" alt="logo"
                             class="d-none d-md-inline me-4" width="98px">
-                        <a class="btn btn-sm ms-md-5 p-control border-end d-none d-md-inline " href="#!"
+                        <a class="btn btn-sm ms-md-5 p-control border-end d-none d-md-inline " href="{{ route('pagina-principal') }}"
                             role="button">Página
                             principal</a>
-                        <a class="btn btn-sm ms-md-5 d-inline d-md-none btn-link btn-floating" href="#!"
+                        <a class="btn btn-sm ms-md-5 d-inline d-md-none btn-link btn-floating" href="{{ route('pagina-principal') }}"
                             role="button"><i class="fas fa-home"></i></a>
                         <a class="btn btn-sm  p-control border-end d-none d-md-inline" href="#!"
                             role="button">¿Quiénes
