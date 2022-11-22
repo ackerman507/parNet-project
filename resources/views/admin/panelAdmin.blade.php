@@ -46,7 +46,7 @@
                         <div class="col-md-8">
                             <div class="card-body">
                                 <h5 class="card-title">Sugerencias</h5>
-                                <p class="card-text">Alta, baja, edición y búsqueda de sugerencias.</p>
+                                <p class="card-text">Búsqueda y exportación de sugerencias.</p>
                             </div>
                         </div>
                     </div>
@@ -97,7 +97,7 @@
                         <div class="col-md-8">
                             <div class="card-body">
                                 <h5 class="card-title">Solicitudes servicios</h5>
-                                <p class="card-text">Alta, baja, edición y búsqueda de solicitudes de servicios.</p>
+                                <p class="card-text">Visualización de solicitudes de servicios.</p>
                             </div>
                         </div>
                     </div>

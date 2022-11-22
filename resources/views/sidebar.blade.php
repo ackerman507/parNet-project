@@ -150,7 +150,7 @@
                                             href="{{ route('contactanos') }}">Contactos</a>
                                     </li>
                                     <li class="nav-item ">
-                                        <a class="nav-link menu-tabs me-2" href="#">Socios</a>
+                                        <a class="nav-link menu-tabs me-2" href="{{ route('sugerencias.create') }}">Sugerencias</a>
                                     </li>
 
                                 </ul>

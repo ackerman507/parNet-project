@@ -1,6 +1,6 @@
-@extends('base')
+@extends('sidebar')
 @section('title', 'Agregar sugerencia')
-@section('body')
+@section('content')
     @include('sugerencias.form');
     <button type="button" class="btn btn-success" onclick="createSuggestion();">Enviar</button>
 @endsection

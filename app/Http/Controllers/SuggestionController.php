@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Exports\SuggestionExport;
+use App\Models\News;
 use App\Models\Suggestion;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
@@ -30,7 +31,8 @@ class SuggestionController extends Controller
      */
     public function create()
     {
-        return view('sugerencias.create');
+        $news = News::all();
+        return view('sugerencias.create', compact('news'));
     }
 
     /**

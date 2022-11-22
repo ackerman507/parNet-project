@@ -1,11 +1,11 @@
 <form action="" id="suggestions">
-    <div class="row">
+    <div class="row text-white">
         <div class="col-12">
             <label for="">Nombre:</label>
             <input type="text" name="name" class="form-control" value="{{ optional($suggestion ?? null)->name }}">
         </div>
     </div>
-    <div class="row">
+    <div class="row text-white">
         <div class="col-12">
             <label for="">Sugerencia</label>
             <textarea name="suggestion" class="form-control" id="" cols="30" rows="10">{{ optional($suggestion ?? null)->suggestion }}</textarea>
