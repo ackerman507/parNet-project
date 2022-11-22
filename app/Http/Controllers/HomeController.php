@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Field;
+use App\Models\News;
 use App\Models\Product;
 use Illuminate\Http\Request;
 
@@ -10,7 +11,8 @@ class HomeController extends Controller
 {
 
     public function index() {
-        return view('index');
+        $news = News::all();
+        return view('index', compact('news'));
     }
 
     public function certificaciones() {
@@ -65,6 +67,11 @@ class HomeController extends Controller
     public function servicios() {
         $fields = Field::all();
         return view('navbar.servicios', compact('fields'));
+    }
+
+    public function noticias() {
+        $news = News::all();
+        return view('noticias', compact('news'));
     }
 
 }

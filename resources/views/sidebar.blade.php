@@ -39,15 +39,18 @@
                                 class="p-noticias ms-2 me-2">Noticias</span><img
                                 src="{{ asset('assets/mapa-mundo_left.png') }}" alt="mundo">
                         </li>
-                        <li class="p-3 bg-blue" style="line-height: 12px;">
-                            <span class="mensaje" style="font-size: 10px; font-style:italic;">Alianzas en telecomunicaciones
-                                generará competencia: Standard & Poor's. [Leer más...]</span>
-                        </li>
-                        <li class="p-3" style="line-height: 12px;">
-                            <span class="mensaje" style="font-size: 10px; font-style:italic;">La TV satelital cumple 50
-                                años.
-                                [Leer más...]</span>
-                        </li>
+                        @foreach ($news as $n)
+                            @if ($n->active == 1)
+                                <li class="p-3 bg-blue" style="line-height: 12px;">
+                                    <span class="mensaje" style="font-style:italic;"><span
+                                            style="font-size: 11px; font-weight: bold;">{{ $n->title }}</span><br><span
+                                            style="font-size: 10px;">{{ substr($n->description, 0, 25) }}.<a
+                                                href="{{ route('noticias') }}"
+                                                style="background-color: transparent; cursor: pointer; display: inline;">[Leer
+                                                más...]</a></span></span>
+                                </li>
+                            @endif
+                        @endforeach
 
                         <li class="mt-3">
                             <a href="#" class="control-panel d-flex align-items-center justify-content-center"><span
