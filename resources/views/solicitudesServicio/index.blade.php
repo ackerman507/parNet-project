@@ -1,16 +1,16 @@
-@extends('base')
-@section('title', 'Solicitudes de servicio por area')
-@section('body')
-    <div class="row">
-        <div class="col-12 d-flex justify-content-between">
-            <h1>Solicitudes de servicio por area</h1>
+@extends('sidebar')
+@section('title', 'Solicitudes de servicio por área')
+@section('content')
+    <div class="row mb-3">
+        <div class="col-12 d-flex justify-content-between text-white ">
+            <h1>Solicitudes de servicio por área</h1>
         </div>
     </div>
     <div class="row">
         <div class="col-12">
-            <table id="servicesRequests" class="table w-100">
+            <table id="servicesRequests" class="table w-100 table table-striped table-success">
                 <thead>
-                    <th>Area sugerida</th>
+                    <th>Área sugerida</th>
                     <th>Correo del que lo sugiere</th>
                     <th>Sugerencia de servicio</th>
                     <th>Fecha</th>

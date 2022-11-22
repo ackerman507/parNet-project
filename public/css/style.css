@@ -399,6 +399,15 @@ a.article:hover {
     padding-left: calc(var(--bs-gutter-x) * .5) !important;
 }
 
+.content-q {
+    /* padding: 40px; */
+    background-color: #336699;
+    height: 100vh;
+    padding-left: 10px;
+    padding-right: calc(var(--bs-gutter-x) * .5) !important;
+    padding-left: calc(var(--bs-gutter-x) * .5) !important;
+}
+
 #content {
     width: 100%;
     /* padding: 20px; */

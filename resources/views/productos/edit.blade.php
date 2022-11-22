@@ -1,6 +1,6 @@
-@extends('base')
+@extends('sidebar-admin')
 @section('title', 'Actualizar producto')
-@section('body')
+@section('content')
     @include('productos.form')
     <button type="button" class="btn btn-success" onclick="updateProducts({{ $products->id }});">Editar</button>
 @endsection

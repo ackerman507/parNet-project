@@ -1,7 +1,7 @@
-@extends('base')
+@extends('sidebar-admin')
 @section('title', 'Servicios')
-@section('body')
-    <div class="row">
+@section('content')
+    <div class="row text-white">
         <div class="col-12 d-flex justify-content-between">
             <h1>Servicios</h1>
             <a href="{{ route('servicios.create') }}" class="btn btn-success">Agregar</a>
@@ -9,7 +9,7 @@
     </div>
     <div class="row">
         <div class="col-12">
-            <table id="services" class="table w-100">
+            <table id="services" class="table w-100 table table-striped table-success">
                 <thead>
                     <th>Área</th>
                     <th>Descripción</th>

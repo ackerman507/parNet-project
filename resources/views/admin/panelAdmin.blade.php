@@ -1,4 +1,4 @@
-@extends('sidebar')
+@extends('sidebar-admin')
 @section('title', 'Panel')
 @section('content')
     <div class="row">

@@ -1,6 +1,6 @@
-@extends('base')
+@extends('sidebar-admin')
 @section('title', 'Productos')
-@section('body')
+@section('content')
     @include('productos.form')
     <button class="btn btn-success" onclick="createProduct();">Agregar</button>
 @endsection

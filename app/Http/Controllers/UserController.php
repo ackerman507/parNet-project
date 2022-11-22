@@ -26,8 +26,7 @@ class UserController extends Controller
     }
 
     public function panelAdmin() {
-        $news = News::all();
-        return view('admin.panelAdmin', compact('news'));
+        return view('admin.panelAdmin');
     }
 
     /**

@@ -1,6 +1,6 @@
-@extends('base')
+@extends('sidebar-admin')
 @section('title', 'Actualizar area')
-@section('body')
+@section('content')
     @include('areas.form')
     <button type="button" class="btn btn-success" onclick="updateFields({{ $field->id }});">Editar</button>
 @endsection

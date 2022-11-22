@@ -1,5 +1,5 @@
 <form action="" id="services">
-    <div class="row">
+    <div class="row text-white">
         <div class="col-12">
             <label for="">Area</label>
             <select name="field_id" id="" class="form-control">
@@ -14,7 +14,7 @@
             </select>
         </div>
     </div>
-    <div class="row">
+    <div class="row text-white">
         <div class="col-12">
             <label for="">Servicio</label>
             <input type="text" class="form-control" name="service" value="{{ optional($service ?? null)->service }}">

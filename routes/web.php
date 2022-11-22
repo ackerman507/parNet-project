@@ -78,49 +78,75 @@ Route::get('/productos_listar', [ProductController::class, 'getProducts'])->name
 //no necesita vista
 Route::get('/noticias_estatus/{id}', [NewsController::class, 'changeStatus'])->name('status');
 
+
+//listo
 Route::resource('/noticias', NewsController::class);
 
+
+//nrv
 Route::get('/productos_stock', [ProductController::class, 'productsGraph'])->name('products_graph.get');
 
+
+//nrv
 Route::post('/productos_editar', [ProductController::class, 'update'])->name('productos.update');
 
+
+//nrv
 Route::get('/producto_pdf/{id}', [ProductController::class, 'pdf'])->name('producto_pdf.get');
 
+
+//nrv
 Route::get('/productos_reporte', [ProductController::class, 'report'])->name('productos_reporte.get');
 
+
+//listo
 Route::resource('/productos', ProductController::class)->except('update');
 
+//nrv
 Route::resource('/contacto', ContactController::class);
 
+//nrv
 Route::get('/areas_listar', [FieldController::class, 'getFields'])->name('fields.get');
 
+//listo
 Route::resource('/areas', FieldController::class);
 
+//nrv
 Route::get('/sugerencias_listar', [SuggestionController::class, 'getSuggestions'])->name('suggestions.get');
 
+//nrv
 Route::get('/pdf', [SuggestionController::class, 'pdf'])->name('pdf');
 
+//nrv
 Route::get('/excel', [SuggestionController::class, 'excel'])->name('excel');
 
+//listo
 Route::resource('/sugerencias', SuggestionController::class);
 
 Route::get('/servicios_por_area', [ServiceController::class, 'servicesByFieldGraph'])->name('services_graph.get');
 
+//nrv
 Route::get('/servicios_listar', [ServiceController::class, 'getServices'])->name('services.get');
 
+//listo
 Route::resource('/servicios', ServiceController::class);
 
+//listo
 Route::get('/graficas', [GraphController::class, 'index'])->name('graphs');
 
+//nrv
 Route::get('/solicitudes_servicios_listar', [ServiceRequestController::class, 'getServicesRequests'])->name('services_requests.get');
 
+//listo
 Route::resource('/solicitudes_servicios', ServiceRequestController::class);
 Route::get('/contacto', function () {
     return view('contacto.index');
 });
 
+//borrar
 Route::get('/inicio', function () {
     return view('inicio.index');
 });
 
+//nrv
 Route::get('/home', [UserController::class, 'login'])->name('home');

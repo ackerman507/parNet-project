@@ -1,6 +1,6 @@
-@extends('base')
+@extends('sidebar-admin')
 @section('title', 'Crear noticia')
-@section('body')
+@section('content')
     @include('noticias.form');
     <button type="button" class="btn btn-success" onclick="createNews();">Agregar</button>
 @endsection

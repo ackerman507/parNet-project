@@ -1,6 +1,6 @@
-@extends('base')
+@extends('sidebar-admin')
 @section('title', 'Crear servicio')
-@section('body')
+@section('content')
     @include('servicios.form');
     <button type="button" class="btn btn-success" onclick="createServices();">Agregar</button>
 @endsection

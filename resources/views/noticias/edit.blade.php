@@ -1,6 +1,6 @@
-@extends('base')
+@extends('sidebar-admin')
 @section('title', 'Actualizar noticia')
-@section('body')
+@section('content')
     @include('noticias.form')
     <button type="button" class="btn btn-success" onclick="updateNews({{ $news->id }});">Editar</button>
 @endsection

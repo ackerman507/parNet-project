@@ -1,6 +1,6 @@
-@extends('base')
+@extends('sidebar-admin')
 @section('title', 'Áreas')
-@section('body')
+@section('content')
     @include('areas.form')
     <button type="button" class="btn btn-success" onclick="createField();">Agregar</button>
 @endsection

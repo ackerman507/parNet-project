@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Field;
+use App\Models\News;
 use App\Models\ServiceRequest;
 use Illuminate\Http\Request;
 use Yajra\DataTables\Facades\DataTables;
@@ -16,7 +17,8 @@ class ServiceRequestController extends Controller
      */
     public function index()
     {
-        return view('solicitudesServicio.index');
+        $news = News::all();
+        return view('solicitudesServicio.index', compact('news'));
     }
 
     /**
