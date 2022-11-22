@@ -29,7 +29,8 @@ Route::get('/', function () {
 
 Route::post('/usuario_sesion', [UserController::class, 'login'])->name('usuario_sesion');
 
-Route::get('/inicia_sesion', [UserController::class, 'index']);
+// vista lista
+Route::get('/inicia_sesion', [UserController::class, 'index']); 
 
 Route::get('/panel_admin', [UserController::class, 'panelAdmin'])->name('panel_admin');
 

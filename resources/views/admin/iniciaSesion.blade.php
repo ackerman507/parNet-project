@@ -1,40 +1,80 @@
 @extends('base')
-@section('title', 'Prueba')
+@section('title', 'login')
 @section('body')
-    <form id="inicio_sesion_form">
-        <div class="row">
-            <div class="col-12">
-                <label for="">Correo</label>
-                <input type="text" name="email" class="form-control">
-            </div>
-        </div>
+    <section class="h-100">
+        <div class="container h-100">
+            <div class="row justify-content-center align-items-center h-100">
+                <div class="col-md-8">
 
-        <div class="row">
-            <div class="col-12">
-                <label for="">Contraseña</label>
-                <input type="text" name="password" class="form-control">
-            </div>
-        </div>
+                    <div class="card shadow-lg rounded-5 bg-light">
+                        <div class="card-header text-muted">{{ __('INTRANET') }}</div>
 
-        <div class="row mb-3">
+                        <div class="card-body">
+                            <h1 class="fs-4 card-title fw-bold mb-3">Acceso</h1>
+                            <form id="inicio_sesion_form">
+
+                                <div class="row mb-3">
+                                    <label for=""
+                                        class="col-md-4 col-form-label text-md-end">{{ __('Usuario') }}</label>
+
+                                    <div class="col-md-6">
+                                        <input id="email" type="email" class="form-control bg-light rounded-5"
+                                            @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}"
+                                            required autocomplete="email" autofocus>
+
+                                        @error('email')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <label for="password"
+                                        class="col-md-4 col-form-label text-md-end">{{ __('Password') }}</label>
+
+                                    <div class="col-md-6">
+                                        <input id="password" type="password" class="form-control bg-light rounded-5"
+                                            @error('password') is-invalid @enderror" name="password" required
+                                            autocomplete="current-password">
+
+                                        @error('password')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
                                     
-            <div class="col-md-8 offset-md-2">
-                <div class="form-check">
-                    <div class="d-flex justify-content-center">
-                        <img class="m-3" src="{{ captcha_src() }}">
-                    </div>
-                    
-                    <input type="text" class="form-control bg-light rounded-5" name="captcha">
-                </div>
-            </div>
-        </div>
+                                    <div class="col-md-6 offset-md-3">
+                                        <div class="form-check">
+                                            <div class="d-flex justify-content-center">
+                                                <img class="m-3" src="{{ captcha_src() }}">
+                                            </div>
+                                            
+                                            <input type="text" class="form-control bg-light rounded-5" name="captcha">
+                                        </div>
+                                    </div>
+                                </div>
 
-        <div class="row">
-            <div class="col-12">
-                <button class="btn-success" type="button" onclick="login()">Iniciar sesion</button>
+                                <div class="row mb-0">
+                                    <div class="col-md-8 offset-md-4 d-flex justify-content-end">
+                                        <button type="button" name="check" class="btn rounded-5 btn-blue"
+                                            onclick="login()">
+                                            {{ __('Login') }}
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
-    </form>
+    </section>
 @endsection
 
 @push('scripts')
