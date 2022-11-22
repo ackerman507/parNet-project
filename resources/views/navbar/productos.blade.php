@@ -8,14 +8,20 @@
     </div>
 
     <div class="row">
-        @foreach ($productos as $producto)
-            <div class="col-12 col-md-4">
-                <div class="d-flex flex-column justify-content-center align-items-center">
-                    <img src="{{ asset('storage/images/productos/' . $producto->image) }}" alt="">
-                    <label for="">Precio ${{ number_format($producto->price, 2) }}</label>
-                    <a href="{{ route('producto_pdf.get', $producto->id) }}">Ficha tecnica</a>
-                </div>
-            </div>
-        @endforeach
+        <div class="col-12">
+            <table id="products" class="table w-100">
+                <thead>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <th>Imagen</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Ficha técnica</th>
+                    <th></th>
+                </thead>
+            </table>
+        </div>
     </div>
+
+    <script src="{{ @asset('js/productos/publico.js')}}"></script>
 @endsection

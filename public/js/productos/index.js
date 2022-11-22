@@ -9,7 +9,8 @@ const productsTable = async () => {
                 data: 'name'
             },
             {
-                data: 'description'
+                data: 'description',
+                render: (d) => `${d.substring(0, 15)}`
             },
             {
                 data: 'image',
@@ -23,7 +24,8 @@ const productsTable = async () => {
                 data: 'stock'
             },
             {
-                data: 'data_sheet'
+                data: 'data_sheet',
+                render: (d) => `${d.substring(0, 15)}`
             },
             {
                 data: 'id',
